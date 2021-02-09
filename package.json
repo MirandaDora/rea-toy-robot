@@ -1,0 +1,24 @@
+{
+  "name": "rea-toy-robot",
+  "version": "1.0.0",
+  "description": "rea toy robot",
+  "main": "index.js",
+  "scripts": {
+    "test": "find modules -name '*.test.*' |  NODE_ENV=test TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' xargs mocha --exit -R spec -r ts-node/register",
+    "test2": "mocha ./modules/**/*.test.*"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.2.0",
+    "@types/sinon-chai": "^3.2.5",
+    "chai": "^4.3.0",
+    "mocha": "^8.2.1"
+  },
+  "dependencies": {
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
