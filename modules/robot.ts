@@ -1,5 +1,5 @@
 import { Command } from './commands/command'
-class Robot {
+export class Robot {
   x: number = 0;
   y: number = 0;
   facing: string = 'NORTH';
@@ -17,10 +17,11 @@ class Robot {
     const { x, y, facing } = command.action(this.x, this.y, this.facing)
     return { x, y, facing }
   }
-  isFalling() {
-    if (this.x > -1 && this.x < 6 && this.y > -1 && this.y < 6) {
+  isFalling(x: number, y: number) {
+    if (x > -1 && x < 6 && y > -1 && y < 6) {
       return true
     } else {
+      console.log('Robot falling with this command:', x, y)
       return false
     }
   }
