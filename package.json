@@ -2,10 +2,11 @@
   "name": "rea-toy-robot",
   "version": "1.0.0",
   "description": "rea toy robot",
-  "main": "index.js",
+  "main": "gaming.js",
   "scripts": {
-    "test": "find modules -name '*.test.*' |  NODE_ENV=test TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' xargs mocha --exit -R spec -r ts-node/register",
-    "test2": "mocha ./modules/**/*.test.*"
+    "test": "find src -name '*.test.*' |  NODE_ENV=test TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' xargs mocha --exit -R spec -r ts-node/register",
+    "start": "npx ts-node gaming.ts",
+    "lint": "tslint src/**/*.ts{,x}"
   },
   "author": "",
   "license": "ISC",
@@ -13,10 +14,12 @@
   "devDependencies": {
     "@types/chai": "^4.2.14",
     "@types/mocha": "^8.2.0",
-    "@types/yargs": "^16.0.0",
     "@types/sinon-chai": "^3.2.5",
+    "@types/yargs": "^16.0.0",
     "chai": "^4.3.0",
-    "mocha": "^8.2.1"
+    "mocha": "^8.2.1",
+    "tslint": "^6.1.3",
+    "typescript": "^4.1.5"
   },
   "dependencies": {
     "@types/inquirer": "^7.3.1",
@@ -24,7 +27,6 @@
     "chalk": "^4.1.0",
     "inquirer": "^7.3.3",
     "ts-node": "^9.1.1",
-    "typescript": "^4.1.3",
     "yargs": "^16.2.0"
   }
 }
