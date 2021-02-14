@@ -1,3 +1,7 @@
+### Compile environment:
+Nodejs 12.13.0
+Npm 6.12.1
+
 ### Command:
 1. `npm install` to install dependencies.
 2. `npm run start` to start application.
