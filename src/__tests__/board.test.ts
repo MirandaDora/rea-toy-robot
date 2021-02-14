@@ -1,7 +1,5 @@
 import * as chai from 'chai'
 import { Board } from '../board'
-import { Robot } from '../robot'
-import { Directions } from '../directions'
 const expect = chai.expect
 
 describe('Board', () => {
