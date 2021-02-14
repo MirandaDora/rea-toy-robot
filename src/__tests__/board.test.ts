@@ -5,13 +5,6 @@ import { Directions } from '../directions'
 const expect = chai.expect
 
 describe('Board', () => {
-  describe('printBoard()', () => {
-    const board = new Board(5)
-    it('Should print board', () => {
-      const robot = new Robot(1, 3, Directions.NORTH, 'A')
-      board.printBoard(robot)
-    })
-  })
   describe('isOutside()', () => {
     const board = new Board(5)
     it('Should return true if falling', () => {
