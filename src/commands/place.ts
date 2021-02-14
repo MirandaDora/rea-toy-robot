@@ -1,6 +1,6 @@
-import { Command } from './command';
-import { getDirection } from '../directions';
-import { Robot } from "../robot";
+import { Command } from './command'
+import { getDirection } from '../directions'
+import { Robot } from "../robot"
 export class Place extends Command {
   parseCommand(commandString: string) {
     // name, x, y, direction

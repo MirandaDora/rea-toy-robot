@@ -1,17 +1,17 @@
-import { Robot } from './robot';
+import { Robot } from './robot'
 export class Board{
-  dimension: Number;
+  dimension: Number
   constructor(dimension: Number){
-    this.dimension = dimension;
+    this.dimension = dimension
   }
 
   printBoard(robot: Robot) {
     for(let y = 0; y < this.dimension; y++){
       for(let x = 0; x < this.dimension; x++){
         if(robot.x === x && robot.y === y){
-          process.stdout.write(`[A(${x},${y},${robot.facing})]`);
+          process.stdout.write(`[A(${x},${y},${robot.facing})]`)
         } else {
-          process.stdout.write('[            ]');
+          process.stdout.write('[            ]')
         }
       }
       console.log('')

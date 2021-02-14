@@ -1,6 +1,6 @@
-import { Command } from './command';
-import { Directions } from '../directions';
-import { Robot } from "../robot";
+import { Command } from './command'
+import { Directions } from '../directions'
+import { Robot } from "../robot"
 export class Right extends Command {
   action(robot: Robot) {
     const facing = robot.facing
@@ -8,10 +8,10 @@ export class Right extends Command {
     switch (facing) {
       case 'NORTH':
         newFacing = Directions.EAST
-        break;
+        break
       case 'SOUTH':
         newFacing = Directions.WEST
-        break;
+        break
       case 'EAST':
         newFacing = Directions.SOUTH
         break
@@ -19,7 +19,7 @@ export class Right extends Command {
         newFacing = Directions.NORTH
         break
       default:
-        break;
+        break
     }
     return { x: robot.x, y: robot.y, facing: newFacing }
   }

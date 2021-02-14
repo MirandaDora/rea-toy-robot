@@ -1,14 +1,14 @@
-import * as chai from 'chai';
+import * as chai from 'chai'
 import { Board } from '../board'
 import { Robot } from '../robot'
 import { Directions } from '../directions'
-const expect = chai.expect;
+const expect = chai.expect
 
 describe('Board', () => {
   describe('printBoard()', () => {
     const board = new Board(5)
     it('Should print board', () => {
-      const robot = new Robot(1, 3, Directions.NORTH)
+      const robot = new Robot(1, 3, Directions.NORTH, 'A')
       board.printBoard(robot)
     })
   })

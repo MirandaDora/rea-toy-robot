@@ -1,4 +1,4 @@
-import { Robot } from "../robot";
+import { Robot } from "../robot"
 import { Directions, getDirection } from '../directions'
 export abstract class Command {
   action(robot:Robot) {

@@ -1,5 +1,5 @@
-import { Command } from './command';
-import { Robot } from "../robot";
+import { Command } from './command'
+import { Robot } from "../robot"
 export class Report extends Command {
   action(robot: Robot) {
     console.log(`X: ${robot.x}, Y: ${robot.y}, F: ${robot.facing}`)

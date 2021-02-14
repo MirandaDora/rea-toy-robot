@@ -10,11 +10,11 @@ export function getDirection(facing: string): Directions {
     case 'NORTH':
       return Directions.NORTH
     case 'SOUTH':
-      return Directions.SOUTH;
+      return Directions.SOUTH
     case 'WEST':
-      return Directions.WEST;
+      return Directions.WEST
     case 'EAST':
-      return Directions.EAST;
+      return Directions.EAST
     default:
       console.log('Invalid direction')
       throw new Error('invalid direction')
