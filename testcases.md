@@ -22,3 +22,13 @@ MOVE
 REPORT
 (X: 0, Y: 0, F: SOUTH)
 PLACE 5,5,WEST (fall)
+
+### case 3 ###
+MOVE
+PLACE 2,5,WEST
+PLACE 3,3,NORTHWEST (Invalid direction)
+PLACE 1,1,EAST
+TELEPORT 1,2 (Invalid command)
+LEFT
+REPORT
+(X: 2, Y: 1, F: NORTH)
