@@ -16,4 +16,21 @@ describe('Board', () => {
       expect(board.isOutside(2, 2)).to.be.false // tslint:disable-line
     })
   })
+
+  describe('putObstacle()', ()=> {
+    const board = new Board(5)
+    it('Should place obstacle', ()=>{
+      expect(board.putObstacle(1, 2)).to.deep.equal(['1-2'])
+      try {
+        board.putObstacle(1, 2)//obstacle existed
+      } catch (error) {
+        expect(error.message).to.equal('Illegal obstacle place')
+      }
+      // expect(board.putObstacle(6, 2)).to.throw(new Error('Illegal obstacle place')) //obstacle is outside of the board
+    })
+    it('Should return true if stepped on obstacle', () => {
+      expect(board.isOnObstacle(1, 2)).to.be.true
+      expect(board.isOnObstacle(3, 4)).to.be.false
+    })
+  })
 })

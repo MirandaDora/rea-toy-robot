@@ -94,3 +94,10 @@ production. It is not required to provide any graphical output showing the
 movement of the toy robot.
 
 Please do not put your name in any of the submitted code since this makes it harder for us to review your submission anonymously.
+
+From Stephen Dodd to Everyone: (1:11 pm)
+ Extend the Toy Robot with a PLACE_OBJECT command, to place an object on the tabletop surface.  When moving the toy robot it should be prevented from bumping into previously placed objects on the tabletop surface. PLACE_OBJECT should place an object in front of the current location of the toy robot.  For example if the toy robot is at location (0,0) and facing EAST, an object should be placed in location (1,0).
+
+Object do not move,
+object do not have dirction,
+Step into obstacle == not moving
